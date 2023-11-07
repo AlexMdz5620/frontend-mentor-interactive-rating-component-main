@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+}
+main{
+    height: 95vh;
+    display: grid;
+    place-content: center;
+}
+h1{
+    margin: 35px 0 0;
+}
+p{
+    margin: 15px 0;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+.cardContainer{
+    background-color: hsl(213, 19%, 15%);
+    border-radius: 1.5rem;
+    width: 425px;
+}
+.cardRatingState{
+    margin: 35px;
+    border-radius: 1.5rem;
+    /* display: none; */
+}
+button{
+    color: hsl(0, 0%, 100%);
+}
+.star{
+    display: grid;
+    place-content: center;
+    background-color: hsl(214, 20%, 20%);
+    color: hsl(217, 12%, 63%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 15px 0;
+}
+.numbs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0 0;
+}
+.num{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    border: none;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(214, 20%, 20%);
+    cursor: pointer;
+    outline: none;
+    transition: all .2s ease-out;
+}
+.num:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+.num:active {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+.numAct {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+.numAct:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+.submit{
+    width: 100%;
+    height: 40px;
+    border-radius: 1rem;
+    border: none;
+    margin: 35px 0 0;
+    background-color: hsl(25, 97%, 53%);
+    letter-spacing: 0.2rem;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+.submit:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+/*Card of Thank*/
+.cardThankYou{
+    border-radius: 1.5rem;
+    display: none;
+}
+.cardThankYou div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgThanks{
+    margin: 45px 0 15px 0;
+}
+.selected{
+    background-color: hsl(214, 20%, 20%);
+    margin: 20px 0 0;
+    padding: 5px 15px;
+    border-radius: 1rem;
+    color: hsl(25, 97%, 53%)
+}
+.thankYou{
+    margin: 40px 0 0;
+}
+.thank{
+    margin: 10px 10px 25px;
+    text-align: center;
+    padding: 0 33px 20px;
+}
+/*Footer*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Cell*/
+@media screen and (max-width: 375px){
+    .cardContainer{
+        width: 325px;
+    }
+    .submit {
+        width: 295px;
+    }
+}

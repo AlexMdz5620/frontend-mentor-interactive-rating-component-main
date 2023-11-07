@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <main>
+    <div class="cardContainer">
+      <div id="cardRatingState" class="cardRatingState">
+        <div class="star">
+          <img src="./images/icon-star.svg" alt="">
+        </div>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>      
+        <form id="form" action="" class="numbs">
+          <label for="1">
+            <input id="1" type="text" name="one" class="num" value="1" readonly>
+          </label>
+          <label for="2">
+            <input id="2" type="text" name="two" class="num" value="2" readonly>
+          </label>
+          <label for="3">
+            <input id="3" type="text" name="three" class="num" value="3" readonly>
+          </label>
+          <label for="4">
+            <input id="4" type="text" name="four" class="num" value="4" readonly>
+          </label>
+          <label for="5">
+            <input id="5" type="text" name="five" class="num" value="5" readonly>
+          </label>
+          <button id="submit" class="submit" type="submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <div id="cardThankYou" class="cardThankYou">
+        <div>
+          <img src="./images/illustration-thank-you.svg" class="imgThanks">
+          <span id="support" class="support selected"></span>
+          <h2 class="thankYou">Thank you!</h2>
+          <p class="thank">We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>  
+        </div>
+      </div>
+    </div>
+  </main> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
